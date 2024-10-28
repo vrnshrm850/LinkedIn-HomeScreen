@@ -1,0 +1,539 @@
+/* Outermost Container, Header and Content */
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #F4F2EE;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.mr-l-10 {
+  margin-left: 10px;
+}
+
+.mr-l-5 {
+  margin-left: 5px;
+}
+
+.mr-r-5 {
+  margin-right: 5px;
+}
+
+.mr-b-5 {
+  margin-bottom: 5px;
+}
+
+.mr-b-10 {
+  margin-bottom: 10px;
+}
+
+.pd-tb-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pd-lr-14 {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.pd-b-2 {
+  padding-bottom: 2px;
+}
+
+.pd-14 {
+  padding: 14px;
+}
+
+.txt-clr1 {
+  color: #00000099;
+}
+
+.txt-clr2 {
+  color: #000000E6;
+}
+
+.fw-4 {
+  font-weight: 400;
+}
+
+.fw-6 {
+  font-weight: 600;
+}
+
+.fs-4 {
+  font-size: 4px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.w80 {
+  width: 80px;
+}
+
+.w115 {
+  width: 115px;
+}
+
+.caret-15 {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  color: #191919;
+  left: 0;
+  height: 52.8px;
+  width: 100vw;
+  z-index: 105;
+  border-bottom: 1px solid #EFEEEC;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+}
+
+.center {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.nav-content{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    min-height: 100%;
+    width: 74%;
+}
+
+/* Header */
+
+.logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 10%;
+}
+
+.searchbar > input[type=text] {
+  min-width: 250px;
+  line-height: 1.75;
+  font-weight: 400;
+  font-size: 14px;
+  height: 34px;
+  margin-left: 7px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #EDF3F8;
+  border: 2px solid none;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 7px 6px 7px 6px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  display: inline-block;
+}
+
+.searchbar > input[type=text]:focus {
+  min-width: 350px;
+  max-width: 350px;
+  width: 100%;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 12px;
+  height: 54px;
+}
+
+
+
+.tablinks {
+  border: none;
+  outline: none;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: #000000E6;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: #000000E6;
+  border-bottom: 2px solid #000000E6;
+}
+
+.fit {
+  max-width: -webkit-fill-available;
+}
+
+.separator {
+  border: 0.1px solid #DFDEDA;
+}
+
+.separator1 {
+  border-left: 2px solid #EFEEEC;
+  height: 50px;
+  width: 0.05px;
+}
+
+.alignment {
+  display: grid;
+  grid-gap: 4px;
+  align-items: center;
+}
+
+.justify-center {
+  justify-items: center;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Main Content */
+
+.content {
+  padding: 67px 0 0;
+  margin: 0 auto;
+  width: 74.5vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left-pane {
+  min-width: 225px;
+  max-width: 225px;
+}
+
+.left-pane-content {
+  background-color: #ffffff;
+  padding-bottom: 10px;
+  border: 1px solid #DFDEDA;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+  border-radius: 10px;
+}
+
+.middle-pane {
+  min-width: 555px;
+  max-width: 555px;
+}
+
+.middle-pane-content {
+  background-color: #ffffff;
+  border: 1px solid #DFDEDA;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+  border-radius: 10px;
+}
+
+.right-pane {
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.right-pane-content {
+  background-color: #ffffff;
+  padding-bottom: 10px;
+  border: 1px solid #DFDEDA;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+  border-radius: 10px;
+}
+
+.me-main {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: absolute;
+  top: 88px;
+  margin-left: 75px;
+}
+
+.profile-picture-section {
+  border-bottom: 1px solid #DFDEDA;
+  padding-bottom: 14px;
+}
+
+.mr-t-10 {
+  margin-top: 10px;
+}
+
+.pd-b-14 {
+  padding-bottom: 14px;
+}
+
+.pattern-img {
+  background-image: url(img/images.jpeg);
+  width: 100%;
+  height: 54px;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+}
+
+.user-section {
+  margin-top: 60px;
+  display: grid;
+  grid-gap: 4px;
+  justify-items: center;
+}
+
+.user-name {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+}
+
+.user-job {
+  font-size: 12px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+}
+
+.analytics-section {
+  border-bottom: 1px solid #DFDEDA;
+  padding: 8px 14px;
+  display: grid;
+  grid-gap: 4px;
+  cursor: pointer;
+}
+
+.analytics-section:hover {
+  background-color: #f1f1f1;
+}
+
+.fx-spc-ar {
+  display:flex;
+  justify-content: space-between;
+}
+
+.pv {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #746666;
+  line-height: 1.3333rem;
+}
+
+.blue-text {
+  color: #0A66C2;
+}
+
+.e6 {
+  font-size: 12px;
+}
+
+.premium-section {
+  border-bottom: 1px solid #DFDEDA;
+  padding: 8px 14px;
+  display: grid;
+  grid-gap: 4px;
+  cursor: pointer;
+}
+
+.premium-section:hover {
+  background-color: #f1f1f1;
+}
+
+.premium-text {
+  color: #746666;
+  line-height: 1.3333rem;
+  font-size: 12px;
+}
+
+.saved-section {
+  padding: 8px 14px;
+  grid-gap: 4px;
+  cursor: pointer;
+}
+
+.save-icon {
+  font-size: 12px;
+}
+
+.saved-text {
+  font-size: 12px;
+}
+
+.saved-section:hover {
+  background-color: #f1f1f1;
+  border-radius: 50px;
+}
+
+.middle-pane-user-img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+.post-container {
+  padding: 14px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post {
+  border: 1px solid #909090;
+  border-radius: 50px;
+  height: 45px;
+  width: 440px;
+  display: flex;
+  align-items: center;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+.post-button-container {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.post-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 12px;
+  border-radius: 5px;
+}
+
+.blue {
+  color: #378FE9;
+}
+
+.orange {
+  color: #C37D16;
+}
+
+.pink {
+  color: #E06847;
+}
+
+.btn-txt {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.post-button:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.separator2 {
+  width: 82%;
+  margin-top: 10px;
+}
+
+.genpact {
+  height: 24px;
+  width: 24px;
+}
+
+.post-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  display: grid;
+  align-items: flex-start;
+}
+
+.ellipses {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hide {
+  display: none;
+}
+
+.follow-btn {
+  height: 45px;
+  border-radius: 10px;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+.clr-chng:hover {
+  color: #378FE9;
+}
+
+.csr-ptr {
+  cursor: pointer;
+}
+
+.follow-btn:hover {
+  background-color: rgba(235,244,253,0.7);
+  span{
+    color: #004182;
+  }
+  i{
+    color: #004182;
+  }
+}
+
+.mx-w-75 {
+  max-width: 75%;
+}
+
+.card {
+  margin-bottom: 7px;
+}
+
+.post-img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.trending:hover {
+  background-color: #f1f1f1;
+}
+
+.trending-show-btn:hover {
+  background-color: #f1f1f1;
+}

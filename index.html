@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrate="" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/x-icon" href="img/logo.png">
+        <title>Linkedin</title>
+        <script src="script.js" defer></script>
+        <script type="text/json" src="data.json"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+          <div class="header" id="myHeader">
+            <div class="nav-content">
+              <div class="flex">
+                
+                <img src="img/logo.png" class="logo csr-ptr">
+                <div class="searchbar">
+                  <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                  <input type="text" name="search" placeholder="Search" id="search" data-search>
+                </div>
+              </div>
+              
+              <div class="flex">
+                <div class="tab flex">
+                  <button class="tablinks txt-clr1 w80 active" id="defaultOpen" onclick="openTab(event, 'Home')"><div class="alignment"><i class="fa-solid fa-house fs-20"></i><span>Home</span></div></button>
+                  <button class="tablinks txt-clr1 w80" onclick="openTab(event, 'MyNetwork')"><div class="alignment"><i class="fa-solid fa-user-group fs-20"></i><span>My Network</span></div></button>
+                  <button class="tablinks txt-clr1 w80" onclick="openTab(event, 'Jobs')"><div class="alignment"><i class="fa-solid fa-briefcase fs-20"></i><span>Jobs</span></div></button>
+                  <button class="tablinks txt-clr1 w80" onclick="openTab(event, 'Messaging')"><div class="alignment"><i class="fa-solid fa-comment-dots fs-20"></i><span>Messaging</span></div></button>
+                  <button class="tablinks txt-clr1 w80" onclick="openTab(event, 'Notifications')"><div class="alignment"><i class="fa-solid fa-bell fs-20"></i><span>Notifications</span></div></button>
+                  <button class="tablinks txt-clr1 w80" onclick="openTab(event, 'Me')"><div class="alignment justify-center"><img src="img/me.jpg" style="width: 24px; height: 24px; border-radius: 50%;"><span>Me<i class="fa-solid fa-caret-down caret-15"></i></span></div></button>
+                  <div class="separator1"></div>
+                  <button class="tablinks txt-clr1 w115" onclick="openTab(event, 'ForBusiness')"><div class="alignment"><i class="fa-solid fa-grip fs-20"></i><span>For Business<i class="fa-solid fa-caret-down caret-15"></i></span></div></button>
+                  
+                  <button class="tablinks txt-clr1 w115" onclick="openTab(event, 'Premium')"><div class="alignment justify-center"><img src="img/premium.png" style="width: 24px; height: 24px;"><span>Try Premium for $0</span></div></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="content">
+
+              <div class="left-pane">
+                <div class="left-pane-content mr-b-5">
+                  <div class="profile-picture-section">
+                    <div class="pattern-img"></div>
+                    <img src="img/me.jpg" class="me-main csr-ptr">
+                    <div class="user-section">
+                      <span class="user-name fs-16 fw-6 txt-clr2 csr-ptr">John Doe</span>
+                      <span class="user-job txt-clr1">UI/UX Designer</span>
+                    </div>
+                  </div>
+                  
+                  <div class="analytics-section">
+                    <div class="fx-spc-ar">
+                      <span class="pv fw-6">Profile Viewers</span>
+                      <span class="blue-text fs-12 fw-6">57</span>
+                    </div>
+                    <div class="fx-spc-ar">
+                      <span class="pv fw-6">Connections</span>
+                      <span class="blue-text fs-12 fw-6">534</span>
+                    </div>
+                    <span class="e6 fw-6 txt-clr2">Grow your network</span>
+                  </div>
+
+                  <div class="premium-section">
+                    <div class="fx-spc-ar">
+                      <span class="premium-text fw-4">Achieve 4x more profile visits</span>
+                    </div>
+                    <div class="fx-spc-ar">
+                      <span class="pv fw-6"><img src="img/premium.png" style="width: 10px; height: 10px;"> &nbsp;Try premium for $0</span>
+                    </div>
+                  </div>
+
+                  <div class="saved-section">
+                    <div class="fx-spc-ar">
+                      <span class="saved-text fw-6 txt-clr2"><i class="fa-solid fa-bookmark save-icon"></i>&nbsp;&nbsp;Saved items</span>
+                    </div>            
+                  </div> 
+
+                </div>
+                <div class="left-pane-content">
+                                 
+                  <div class="analytics-section">
+                    <div class="fx-spc-ar">
+                      <span class="pv fw-6">Profile Viewers</span>
+                      <span class="blue-text fs-12 fw-6">57</span>
+                    </div>
+                    <div class="fx-spc-ar">
+                      <span class="pv fw-6">Connections</span>
+                      <span class="blue-text fs-12 fw-6">534</span>
+                    </div>
+                    <span class="e6 fw-6 txt-clr2">Grow your network</span>
+                  </div>
+
+                  <div class="premium-section">
+                    <div class="fx-spc-ar">
+                      <span class="premium-text fw-4">Achieve 4x more profile visits</span>
+                    </div>
+                    <div class="fx-spc-ar">
+                      <span class="pv fw-6"><img src="img/premium.png" style="width: 10px; height: 10px;"> &nbsp;Try premium for $0</span>
+                    </div>
+                  </div>
+
+                  <div class="saved-section">
+                    <div class="fx-spc-ar">
+                      <span class="saved-text fw-6 txt-clr2"><i class="fa-solid fa-bookmark save-icon"></i>&nbsp;&nbsp;Saved items</span>
+                    </div>            
+                  </div> 
+
+                </div>
+              </div>
+
+
+              <div class="middle-pane">
+                <div class="middle-pane-content pd-b-2 mr-b-10">
+                  <div class="post-container">
+                    <img src="img/me.jpg" class="middle-pane-user-img">
+                    <div class="post fw-6 txt-clr1">
+                      <span>Start a post, try writing with AI</span>
+                    </div>
+                  </div>
+                  <div class="post-button-container">
+                    <div class="post-button">
+                      <i class="fa-solid fa-photo-film blue"></i>
+                      <span class="btn-txt fw-6 txt-clr1">Media</span>
+                    </div>
+                    <div class="post-button">
+                      <i class="fa-solid fa-flask-vial orange"></i>
+                      <span class="btn-txt fw-6 txt-clr1">Contribute expertice</span>
+                    </div>
+                    <div class="post-button">
+                      <i class="fa-solid fa-feather pink"></i>
+                      <span class="btn-txt fw-6 txt-clr1">Write article</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex">
+                  <hr class="separator2">
+                  <div class="middle-pane-content2 mr-b-10">
+                    <span class="fs-12 fw-4 txt-clr1">Sort by:</span> &nbsp; <span class="fs-12 fw-6 txt-clr2 csr-ptr">Top<i class="fa-solid fa-caret-down caret-15"></i></span>
+                  </div>
+                </div>
+                <div class="user-cards" data-user-cards-container></div>
+                <template data-user-template>
+                  <div class="card">
+                    
+                    <div class="middle-pane-content">
+                      <div class="pd-14">
+                        <div class="post-head">
+                          <div class="flex">
+                            <img src="img/genpact.jpeg" class="genpact"> <a class="fs-12 fw-6 txt-clr2 mr-l-5 clr-chng" href="https://www.linkedin.com/company/genpact/posts/?feedView=all">Genpact</a><span class="fs-12 fw-4 txt-clr1 mr-l-5">commented on this</span>
+                          </div>
+                          <div class="flex">
+                            <i class="fa-solid fa-ellipsis txt-clr2 fs-16 csr-ptr"></i> 
+                            <i class="fa-solid fa-xmark txt-clr2 mr-l-10 fs-16 csr-ptr"></i>
+                          </div>
+                        </div>
+                        <hr class="separator">
+                        <div class="post-head">
+                          <div class="post-head">
+                            <div>
+                              <img src="img/man-pass.jpeg" class="middle-pane-user-img csr-ptr">
+                            </div>
+                            <div class="mr-l-10 box">
+                              <span class="fs-14 fw-6 txt-clr2 csr-ptr flex"><div data-body></div><i class="fa-solid fa-circle txt-clr1 fs-4 mr-l-5"></i><span class="fw-4 fs-14 txt-clr1 mr-l-5">2nd</span></span>
+                              <span class="fs-12 txt-clr1 ellipses mx-w-75 csr-ptr">Fullstack Developer| .Net | C# | Web API | Html | Css | Javascript | React | MERN Stack</span>
+                              <span class="fs-12 txt-clr1 csr-ptr flex">1h<i class="fa-solid fa-circle txt-clr1 fs-4 mr-l-5"></i><i class="fa-solid fa-earth-americas txt-clr1 fs-12 mr-l-5"></i></span>
+                            </div>
+                          </div>
+                          <div class="flex follow-btn">
+                            <i class="fa-solid fa-plus blue-text"></i> 
+                            <span class="mr-l-10 blue-text">Follow</span>
+                          </div>
+                        </div>
+                        <div class="">
+                          <span data-header class="txt-clr2 fs-14"></span>    
+                        </div>
+                        <div class="post-img">
+                          <img src="img/pattern.jpg" class="fit">
+                        </div>
+                        <div class="post-head pd-b-14">
+                          <div class="flex"><i class="fa-regular fa-thumbs-up blue-text"></i><span class="fs-12 fw-6 txt-clr1 mr-l-5">38</span></div>
+                          <span class="fs-12 txt-clr1">2 Reposts</span>
+                        </div>
+
+                        <div class="separator"></div>
+                        
+                        <div class="post-button-container mr-t-10">
+                          <div class="post-button">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <span class="btn-txt fw-6 txt-clr1">Like</span>
+                          </div>
+                          <div class="post-button">
+                            <i class="fa-regular fa-comment-dots"></i>
+                            <span class="btn-txt fw-6 txt-clr1">Comment</span>
+                          </div>
+                          <div class="post-button">
+                            <i class="fa-regular fa-share-from-square"></i>
+                            <span class="btn-txt fw-6 txt-clr1">Share</span>
+                          </div>
+                          <div class="post-button">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <span class="btn-txt fw-6 txt-clr1">Save</span>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </template>
+                </div>
+
+                <div class="right-pane">
+                  <div class="right-pane-content">
+                    <div class="pd-14">
+                      <div class="flex fx-spc-ar">
+                        <span class="fs-20 fw-6 txt-clr2">Trending Now</span> <i class="fa-solid fa-circle-info txt-clr2"></i>
+                      </div>
+                      <div class="mr-t-10">
+                        <span class="fs-16 fw-6 txt-clr1">curated by LinkedIn News</span>
+                      </div>
+                    </div>
+                    <div class="csr-ptr trending pd-tb-10 pd-lr-14">
+                      <span class="fs-14 fw-6">D2C brands</span>
+                      <div class="flex">
+                        <span class="txt-clr1 fs-12 fw-4">15h ago</span><i class="fa-solid fa-circle txt-clr1 fs-4 mr-l-5 mr-r-5"></i><span class="txt-clr1 fs-12 fw-4">6,255 reads</span>
+                      </div>
+                    </div>
+                    <div class="csr-ptr trending pd-tb-10 pd-lr-14">
+                      <span class="fs-14 fw-6">Quick commerce trends</span>
+                      <div class="flex">
+                        <span class="txt-clr1 fs-12 fw-4">15h ago</span><i class="fa-solid fa-circle txt-clr1 fs-4 mr-l-5 mr-r-5"></i><span class="txt-clr1 fs-12 fw-4">6,255 reads</span>
+                      </div>
+                    </div>
+                    <div class="csr-ptr trending pd-tb-10 pd-lr-14">
+                      <span class="fs-14 fw-6">Cyber crimes</span>
+                      <div class="flex">
+                        <span class="txt-clr1 fs-12 fw-4">15h ago</span><i class="fa-solid fa-circle txt-clr1 fs-4 mr-l-5 mr-r-5"></i><span class="txt-clr1 fs-12 fw-4">6,255 reads</span>
+                      </div>
+                    </div>
+                    <div class="csr-ptr trending pd-tb-10 pd-lr-14">
+                      <span class="fs-14 fw-6">Indian GCCs</span>
+                      <div class="flex">
+                        <span class="txt-clr1 fs-12 fw-4">15h ago</span><i class="fa-solid fa-circle txt-clr1 fs-4 mr-l-5 mr-r-5"></i><span class="txt-clr1 fs-12 fw-4">6,255 reads</span>
+                      </div>
+                    </div>
+                    <div class="csr-ptr trending pd-tb-10 pd-lr-14">
+                      <span class="fs-14 fw-6">Private banks</span>
+                      <div class="flex">
+                        <span class="txt-clr1 fs-12 fw-4">15h ago</span><i class="fa-solid fa-circle txt-clr1 fs-4 mr-l-5 mr-r-5"></i><span class="txt-clr1 fs-12 fw-4">6,255 reads</span>
+                      </div>
+                    </div>
+                    <div id="showMore">
+                      <div class="csr-ptr trending pd-tb-10 pd-lr-14">
+                        <span class="fs-14 fw-6">D2C brands</span>
+                        <div class="flex">
+                          <span class="txt-clr1 fs-12 fw-4">15h ago</span><i class="fa-solid fa-circle txt-clr1 fs-4 mr-l-5 mr-r-5"></i><span class="txt-clr1 fs-12 fw-4">6,255 reads</span>
+                        </div>
+                      </div>
+                      <div class="csr-ptr trending pd-tb-10 pd-lr-14">
+                        <span class="fs-14 fw-6">Quick commerce trends</span>
+                        <div class="flex">
+                          <span class="txt-clr1 fs-12 fw-4">15h ago</span><i class="fa-solid fa-circle txt-clr1 fs-4 mr-l-5 mr-r-5"></i><span class="txt-clr1 fs-12 fw-4">6,255 reads</span>
+                        </div>
+                      </div>
+                      <div class="csr-ptr trending pd-tb-10 pd-lr-14">
+                        <span class="fs-14 fw-6">Cyber crimes</span>
+                        <div class="flex">
+                          <span class="txt-clr1 fs-12 fw-4">15h ago</span><i class="fa-solid fa-circle txt-clr1 fs-4 mr-l-5 mr-r-5"></i><span class="txt-clr1 fs-12 fw-4">6,255 reads</span>
+                        </div>
+                      </div>
+                      <div class="csr-ptr trending pd-tb-10 pd-lr-14">
+                        <span class="fs-14 fw-6">Indian GCCs</span>
+                        <div class="flex">
+                          <span class="txt-clr1 fs-12 fw-4">15h ago</span><i class="fa-solid fa-circle txt-clr1 fs-4 mr-l-5 mr-r-5"></i><span class="txt-clr1 fs-12 fw-4">6,255 reads</span>
+                        </div>
+                      </div>
+                      <div class="csr-ptr trending pd-tb-10 pd-lr-14">
+                        <span class="fs-14 fw-6">Private banks</span>
+                        <div class="flex">
+                          <span class="txt-clr1 fs-12 fw-4">15h ago</span><i class="fa-solid fa-circle txt-clr1 fs-4 mr-l-5 mr-r-5"></i><span class="txt-clr1 fs-12 fw-4">6,255 reads</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pd-14 trending-show-btn csr-ptr" onclick="trendingShowHideFunction()"><span class="txt-clr1 fs-14 fw-6">Show more/Hide</span></div>
+                    
+                  </div>
+                  
+                </div>
+
+              </div>
+
+
+              
+
+          </div>
+    </body>
+</html>
